@@ -1,8 +1,9 @@
 import useSWR from 'swr';
 import Button from '@/components/Button';
 import { fetcher } from '@/utils/helper';
-import styles from './Board.module.css';
 import Card from '@/components/Card';
+import Spinner from '@/components/Spinner';
+import styles from './Board.module.css';
 
 const Board = () => {
   const { data, error } = useSWR('/api/v1/colors', fetcher);
@@ -17,7 +18,7 @@ const Board = () => {
       <div className={styles.message_wrapper}>
         {!data && (
           <div className={styles.message}>
-            <h3>Loading...</h3>
+            <Spinner />
           </div>
         )}
         {error && (

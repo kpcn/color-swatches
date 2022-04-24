@@ -63,3 +63,4 @@ export const formatColorDescription = (color) => {
 
 - [ ] Need to refactor randomness in api response
 - [ ] Detail error handling
+- [ ] Configure lintstage with husky
