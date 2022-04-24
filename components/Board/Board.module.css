@@ -12,6 +12,18 @@
   width: 100%;
 }
 
+.message {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  padding: 5px 0;
+}
+
+.error {
+  font-size: 2rem;
+  color: red;
+}
+
 .actions {
   display: flex;
   margin: 20px 0;
