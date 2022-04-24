@@ -1,0 +1,41 @@
+.board {
+  width: 100vw;
+}
+
+.palette {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.message_wrapper {
+  width: 100%;
+}
+
+.actions {
+  display: flex;
+  margin: 20px 0;
+  justify-content: center;  
+}
+
+@media (min-width: 37em) {
+  .board {
+    width:80vw;
+  }
+
+  .palette {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 48em) {
+  .board {
+    width: 70vw;
+  }
+}
+
+@media (min-width: 90em) {
+  .board {
+    width: 60vw;
+  }
+}

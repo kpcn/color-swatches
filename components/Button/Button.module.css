@@ -1,0 +1,13 @@
+.btn {
+  padding: 1rem 2rem;
+  font-size: larger;
+  cursor: pointer;
+  background-color: azure;
+  border-radius: 10px;
+  border: 2px solid rgb(236, 242, 242); 
+}
+
+.btn:hover {
+  background-color: beige;
+  border: 2px solid beige; 
+}
