@@ -1,3 +1,4 @@
+import { formatColorDescription } from '@/utils/helper';
 import styles from './Card.module.css';
 
 const Card = ({ color }) => {
@@ -7,7 +8,7 @@ const Card = ({ color }) => {
 
   return (
     <div className={styles.card} style={updatedColor}>
-      <div>{color.type}</div>
+      <div>{formatColorDescription(color)}</div>
     </div>
   );
 };
